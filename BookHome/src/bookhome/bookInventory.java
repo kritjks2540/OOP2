@@ -6,24 +6,26 @@
 package bookhome;
 public class bookInventory extends Information implements Information1,Information2,Information3,Information4,Information5 {
     int totalBooks;
+    int idProduct;
     bookInventory(){
        super.ShowNameStroe();
     }
     public void print(){ //ปริ้นรายชื่อหนังสือ
-        System.out.println("------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
         this.InformationBook1();
-        System.out.println("------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
         this.InformationBook2();
-        System.out.println("------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
         this.InformationBook3();
-        System.out.println("------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
         this.InformationBook4();
-        System.out.println("------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
         this.InformationBook5();  
-        System.out.println("------------------------------------------");
+        System.out.println("-----------------------------------------------------------");
         
     }
     public void InformationBook1(){
+        idProduct = 1;
         this.totalBooks = 5;
         System.out.println("BookName: "+bookName1);
         System.out.println("Author: "+Author1);
@@ -32,6 +34,7 @@ public class bookInventory extends Information implements Information1,Informati
         System.out.println("Total Books: "+this.totalBooks);
     }
     public void InformationBook2(){
+        idProduct = 2;
         this.totalBooks = 10;
         System.out.println("BookName: "+bookName2);
         System.out.println("Author: "+Author2);
@@ -40,6 +43,7 @@ public class bookInventory extends Information implements Information1,Informati
         System.out.println("Total Books: "+this.totalBooks);
     }
     public void InformationBook3(){
+        idProduct = 3;
         this.totalBooks = 3;
         System.out.println("BookName: "+bookName3);
         System.out.println("Author: "+Author3);
@@ -48,6 +52,7 @@ public class bookInventory extends Information implements Information1,Informati
         System.out.println("Total Books: "+this.totalBooks);
     }
     public void InformationBook4(){
+        idProduct = 4;
         this.totalBooks = 10;
         System.out.println("BookName: "+bookName4);
         System.out.println("Author: "+Author4);
@@ -56,6 +61,7 @@ public class bookInventory extends Information implements Information1,Informati
         System.out.println("Total Books: "+this.totalBooks);
     }
     public void InformationBook5(){
+        idProduct = 5;
         this.totalBooks = 20;
         System.out.println("BookName: "+bookName5);
         System.out.println("Author: "+Author5);
