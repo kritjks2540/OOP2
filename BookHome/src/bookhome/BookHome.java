@@ -30,12 +30,17 @@ public class BookHome extends Member {
                 case 1:{
                         bookInventory List = new bookInventory();
                         List.print();
-                        System.out.print("Please Enter Product:");
-                        choose = input.nextInt();
+                        List.listhotProduct(mem.countHot1,mem.countHot2,mem.countHot3,mem.countHot4,mem.countHot5);
+                        do{
+                            System.out.print("Please Enter Order ID:");
+                            choose = input.nextInt();
+                        }while(choose != 1 && choose != 2 && choose != 3 && choose != 4 && choose != 5);
                         System.out.print("Amount of Product:");
                         amount = input.nextInt();
-                        System.out.print("Press[1]Rent [2]Buy");
-                        type = input.nextInt();
+                        do{
+                            System.out.print("Press[1]Rent [2]Buy: ");
+                            type = input.nextInt();
+                        }while(type != 1 && type != 2);               
                         mem.ProcessOrder(choose,amount,type);
                         System.out.println("-----------------------------------------------------------");
                         System.out.println("Do you want Back to Menu [1]:Yes [0]:No");
