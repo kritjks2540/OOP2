@@ -12,7 +12,7 @@ public class BookHome extends Member {
         Scanner input = new Scanner(System.in);
         Member mem = new Member();
         mem.loginMember();
-     
+       do{ 
             System.out.println(":::::::::::::::::::::::::: MENU :::::::::::::::::::::::::::");
             System.out.println("1.Book Product");
             System.out.println("2.Buy Point");
@@ -20,7 +20,7 @@ public class BookHome extends Member {
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
             System.out.println("-----------------------------------------------------------");
         do{
-            do{    
+               
                 
                 System.out.print("Please Enter Menu : ");
                 selectMenu = input.nextInt();
@@ -44,7 +44,7 @@ public class BookHome extends Member {
                         mem.ProcessOrder(choose,amount,type);
                         System.out.println("-----------------------------------------------------------");
                         System.out.println("Do you want Back to Menu [1]:Yes [0]:No");
-                        System.out.print("Enternumber: ");
+                        System.out.print("Enter number: ");
                         again = input.nextInt();
                         System.out.println("-----------------------------------------------------------");
                         break;
