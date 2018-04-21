@@ -68,21 +68,21 @@ public class Member {
     }
       public void showStatus(String user1,String pass1){
         if(user1.equals("krit") && pass.equals("0812345678")){
-            System.out.println(":::::::::::::::::::::::::: SHOW STATUS :::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::::::::::::: SHOW STATUS ::::::::::::::::::::::");
             System.out.println("FirstName: "+name +" Lastname:"+lastname);
             System.out.println("Age: "+age +" Point:"+point);
             System.out.println("Book[Rent]: "+countRent+" Book[Buy]: "+countSell);
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         }
         if(user1.equals("aun") && pass.equals("0898765432")){
-            System.out.println(":::::::::::::::::::::::::: SHOW STATUS :::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::::::::::::: SHOW STATUS ::::::::::::::::::::::");
             System.out.println("FirstName: "+name +" Lastname:"+lastname);
             System.out.println("Age: "+age +" Point:"+point);
             System.out.println("Book[Rent]: "+countRent+" Book[Buy]: "+countSell);
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         }
         if(user1.equals("abc") && pass.equals("123456")){
-            System.out.println(":::::::::::::::::::::::::: SHOW STATUS :::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::::::::::::: SHOW STATUS ::::::::::::::::::::::");
             System.out.println("FirstName: "+name +" Lastname:"+lastname);
             System.out.println("Age: "+age +" Point:"+point);
             System.out.println("Book[Rent]: "+countRent+" Book[Buy]: "+countSell);
@@ -224,18 +224,18 @@ public class Member {
     }
     public void topup(String coded){
         if(coded.equals("tudjgog5bonmy")){
-            point+= 50;
-            System.out.println("[System] : You buy point: 50 Point Success !!");
-            System.out.println("[System] : Current Your Point: "+point);
-            System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
-        }else if(coded.equals("qw178wr20rtgh")){
             point+= 100;
             System.out.println("[System] : You buy point: 100 Point Success !!");
             System.out.println("[System] : Current Your Point: "+point);
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
-        }else if(coded.equals("aws02tyhyursx")){
+        }else if(coded.equals("qw178wr20rtgh")){
             point+= 300;
             System.out.println("[System] : You buy point: 300 Point Success !!");
+            System.out.println("[System] : Current Your Point: "+point);
+            System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+        }else if(coded.equals("aws02tyhyursx")){
+            point+= 500;
+            System.out.println("[System] : You buy point: 500 Point Success !!");
             System.out.println("[System] : Current Your Point: "+point);
             System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         }else{
